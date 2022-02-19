@@ -68,14 +68,16 @@ h1 {
 
 #lefticon {
   top: 0;
-  width: 80px; 
-  left: 200px;
+  width: 100px; 
+  left: 150px;
+  border: none;
 }
 
 #righticon {
   top: 0;
-  width: 120px;
-  right: 200px;
+  width: 140px;
+  right: 150px;
+  border: none;
 }
 
 .top {
@@ -132,7 +134,6 @@ h1 {
 #main-title {
   font-size: 4rem;
   text-align: center;
-  /* display: none; */
 }
 
 /* メニューリストの並び設定 */
@@ -148,15 +149,15 @@ h1 {
 
 /* メニューリストの色設定 */
 .navi ul li a {
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 1rem;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 3px #000;
   transition: .5s;
 }
 
 .navi ul li a:hover {
-  color: rgb(192, 17, 17);
+  color: rgb(241, 65, 65);
   transition: .5s;
 }
 
@@ -219,18 +220,6 @@ h1 {
   transition: all 1s;
 }
 
-.scroll {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 1s;
-}
-
-.scroll {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 1s;
-}
-
 
 
 /* 商品名と価格の設定 */
@@ -269,23 +258,41 @@ dl {
 }
 
 
+
+
 .text {
-  width: 60%;
+  width: 50%;
   font-size: 0.9rem;
   text-align: left;
   line-height: 1.8rem;
   background: rgb(218, 218, 109);
-  padding: 10%;
+}
+
+.text h2 {
+  margin: 10%;
+  font-size: 1.7rem;
 }
 
 
 .text p {
   margin-bottom: 38px;
   font-size: 1.2rem;
+  padding: 10%;
 }
 
 .picture {
   width: 50%;
+}
+
+.pictureimg {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.scroll {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
 }
 
 #location {
