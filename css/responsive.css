@@ -1,156 +1,339 @@
-@media(max-width: 1200px) {
-  .header {
-    width: 10%;
-    height: 10%;
-  }
-
-  #lefticon {
-    top: 0;
-    width: 60px; 
-    left: 100px;
-  }
-  
-  #righticon {
-    top: 0;
-    width: 90px;
-    right: 100px;
-  }
-  
-
-  .top {
-    top: 15%;
-  }
-
-  
-  #main-title {
-    font-size: 3rem
-  }
-
-  .wrapper {
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-  }
-
-  .title {
-    height: 90px;
-  }
-  
-  .title h1 span {
-    font-size: 2rem;
-    height: 90px;
-    line-height: 80px;
-  }
-  
-  .order {
-    flex-direction: column;
-    margin: 10px auto 10px auto;
-  }
-
-  .side {
-    width: 100%;
-  }
-
-  .left,
-  .right {
-    border: none;
-  }
-
-  .sub-title {
-    font-size: 1.3rem;
-    margin: 10px auto;
-  }
-
-  dl {
-    padding: 0
-  }
-
-  .explain h2 {
-    margin: 40px 0;
-  }
-
-  .shop-detail {
-    width: 100%;
-  }
-
-  .aboutimg {
-    margin: 0;
-  }
-
-  .text {
-    width: 60%;
-    font-size: 0.5rem;
-    text-align: left;
-    line-height: 1.5rem;
-    background: rgb(218, 218, 109);
-    padding: 5%;
-  }
-
-  .text p {
-    margin-bottom: 25px;
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  /* .picture {
-    margin: 0;
-  } */
-  
-
-  .our-store .sub-title {
-    margin: 30px 0 25px 0;
-  }
-
-  iframe {
-    width: 100%;
-  }
-
-  .access {
-    display: block;
-  }
-
-  .item-info,
-  .time {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .item-info li:nth-child(2) {
-    margin-bottom: 10px;
-  }
-  
-  .map {
-    width: 100%;
-    margin-bottom: 20px; 
-  }
-
-  iframe {
-    max-width: 100%;
-    height: 400px; 
-  }
-
+/* 全体文字設定 */
+body {
+  font-size: 100%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-@media(max-width: 750px) {
 
-  #lefticon {
-    top: 0;
-    width: 50px; 
-    left: 50px;
+/* リスト先頭文字消し */
+ul {
+  list-style: none;
+}
+
+/* リンク色初期化 */
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.88rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* 各カテゴリのタイトル設定 */
+.section-title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+}
+
+/* 各カテゴリのサブタイトル設定 */
+.sub-title {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0px 0 70px 0px;
+  border-bottom: solid 5px rgb(224, 206, 100);
+}
+
+h1 {
+  background: rgb(245, 245, 209);
+}
+
+/* ヘッダーの背景画像 */
+#header {
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+/* ヘッダー内画像(アイコン)設定 */
+.header {
+  position: absolute;
+  width: 9%;
+  height: 9%;
+  display: none;
+}
+
+/* ふわっと浮かせる要素 ↓↓↓*/
+
+#lefticon {
+  top: 0;
+  width: 100px; 
+  left: 150px;
+  border: none;
+}
+
+#righticon {
+  top: 0;
+  width: 140px;
+  right: 150px;
+  border: none;
+}
+
+.top {
+  top: 11%;
+}
+
+.bottom {
+  bottom: 18%;
+}
+
+#icon1,
+#icon7 {
+  right: 12%;
+
+}
+#icon2,
+#icon8 {
+  right: 24%;
+}
+
+#icon3,
+#icon9 {
+  right: 39%;
+}
+
+#icon4,
+#icon10 {
+  right: 53%;
+}
+
+#icon5,
+#icon11 {
+  left: 12%;
+}
+
+#icon6,
+#icon12 {
+  left: 24%;
+}
+
+/* ヘッダータイトル設定 */
+.main-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+  border-top: 5px solid rgb(85, 84, 48);
+  border-bottom: 5px solid rgb(85, 84, 48);
   }
+
+  /* ふわっと浮かせる要素↑↑↑ */
   
-  #righticon {
-    top: 0;
-    width: 70px;
-    right: 50px;
-  }
+#main-title {
+  font-size: 4rem;
+  text-align: center;
+}
 
-  #main-title {
-    font-size: 2.5rem;
-  }
+/* メニューリストの並び設定 */
+.navi ul {
+  display: flex;
+  margin: 20px 40px 0 0;
+}
 
-  .top {
-    top: 20%;
-  }
+/* メニューリストの間隔空ける */
+.navi ul li {
+  margin-left: 28px;
+}
 
+/* メニューリストの色設定 */
+.navi ul li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px #000;
+  transition: .5s;
+}
+
+.navi ul li a:hover {
+  color: rgb(241, 65, 65);
+  transition: .5s;
+}
+
+/* 各タイトルの背景バナー幅*/
+.title {
+  height: 200px;
+}
+
+.title h1 {
+  text-align: center;
+  border-top: 4px  solid rgb(83, 7, 7);
+  border-bottom: 4px  solid rgb(83, 7, 7);
+}
+
+.title h1 span {
+  line-height: 200px;
+  font-size: 4rem;
+  border-bottom: 5px solid red;
+}
+
+.aboutimg {
+  margin-bottom: 80px;
+}
+
+/* 各項目の幅設定 */
+.wrapper {
+  max-width: 60%;
+  margin: 0 auto 10% auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+/* メニューリスト横並び設定 */
+.order {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px auto 100px auto;
+}
+
+
+/* メニューの中央線設定 */
+.left {
+  border-right: solid 1px black;
+}
+
+.right {
+  border-left: solid 1px black;
+}
+
+/* 両サイド3等分 */
+.side {
+  width: 33%;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.scroll {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s;
+}
+
+
+
+/* 商品名と価格の設定 */
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:0 45px;
+  font-size: 0.9rem;
+  align-items: baseline;
+}
+
+
+.side dt {
+  width: 87%;
+  border-bottom: dotted 1px black;
+  text-align: left;
+  margin-bottom: 27px;
+}
+
+
+.side dd {
+  width: 13%;
+  text-align: right;
+  margin-top: 10px;
+}
+
+
+.explain h2 {
+  margin-bottom: 90px;
+}
+
+
+.shop-detail {
+  display: flex;
+}
+
+
+
+
+.text {
+  width: 50%;
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.8rem;
+  background: rgb(218, 218, 109);
+}
+
+.text h2 {
+  margin: 10%;
+  font-size: 1.7rem;
+}
+
+
+.text p {
+  margin-bottom: 38px;
+  font-size: 1.2rem;
+  padding: 10%;
+}
+
+.picture {
+  width: 50%;
+}
+
+.pictureimg {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.scroll {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+#location {
+  margin-bottom: 180px;
+}
+
+.our-store .sub-title {
+  margin-top: 90px;
+}
+
+.access {
+  display: flex;
+}
+
+.time {
+  width: 40%;
+  text-align: left;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+.time h4 {
+  margin-top: 20px;
+}
+
+.item-info li:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.map {
+  width: 60%;
+  margin-bottom: 20px; 
+}
+
+iframe {
+  max-width: 100%;
+  height: 100%; 
+}
+
+#footer {
+  text-align: center;
+  font-size: 0.6rem;
+  margin-bottom: 10px;
 }
