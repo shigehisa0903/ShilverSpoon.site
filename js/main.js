@@ -24,7 +24,7 @@
     };
     
     // menu内容をスクロール時に表示
-    function scrollSlide() {
+    function menuSlide() {
       var windowTop = $(window).scrollTop();
       var objTop = $(window).height();
       
@@ -35,12 +35,26 @@
         }
       });
     };
+
+    function imgSlide() {
+      var windowTop = $(window).scrollTop();
+      var objTop = $(window).height();
+      
+      $('.pictureimg').each(function() {
+        var titleTop = $(this).offset().top +50;
+        if(windowTop > titleTop - objTop) {
+          $(this).addClass('scroll');
+        }
+      });
+    };
     
 // 各関数の実行
     fadeIn();
     $(window).scroll(function() {
-      scrollSlide();
+      menuSlide();
+      imgSlide();
     });
+    sectionscroll();
     
   });
 }
